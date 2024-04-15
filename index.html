@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ammaar's - Personal Website</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <a id="skipToMain" href="#main" >Skip to Main Content</a>
+    <button id="toggleModeBtn">Toggle Dark Mode</button>
+    <header>
+        <div class="container">
+        <h1>Ammaar Saadat </h1>
+        </div>
+        <div class="container">
+            <nav id="navbar">
+                <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#tools">Tools</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="main">
+        <div id="about">
+            <div class="container">
+                <h2>About Me</h2>
+            </div>
+            <p>Hi! I'm Ammaar. I'm currently a junior studying computer science and engineering at the University of Michigan.</p>
+        </div>
+        
+        <div id="portfolio">
+            <div class="container">
+                <h2>Portfolio</h2>
+            </div>
+            <p>I love to create projects.</p>
+            <a href="portfolio.html">projects</a>
+        </div>
+        <div id="hobbies">
+            <div class="container">
+                <h2>Hobbies</h2>
+            </div>
+        </div>
+        <div id="tools">
+            <div class="container">
+                <h2>Tools</h2>
+            </div>
+            <div class="container">
+                <h3 id="tool">Stop Watch</h3>
+            </div>
+            <div id="stopwatch">
+                <div id="sw_display">00:00:00</div>
+                <button id="startStopBtn" onclick="startStop()">Start</button>
+                <button id="resetBtn" onclick="reset()">Reset</button>
+              </div>
+            <div class="container">
+                <h3 id="tool">To-Do List</h3>
+            </div>
+            <form style="text-align: center;">
+                <label for="taskInput">Add new task:</label>
+                <input type="text" id="taskInput" placeholder="Enter ...">
+                <button type="button" onclick="addTask()">Add</button>
+            </form>
+            <ul id="taskList">My Tasks</ul>
+            <div class="container">
+                <h3 id="tool">Clock</h3>
+            </div>
+            <div id="clock"></div>
+        </div>  
+        <div id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+            </div>
+            <div class="container">
+                <p>Feel free to reach out to me at <a href="mailto:saadatam@umich.edu">saadatam@umich.edu</a>.</p>
+            </div>
+        </div>    
+    </main>
+    <footer>
+        <div class="container">
+        <p>&copy; 2024 Ammaar Saadat. All rights reserved.</p>
+        </div>
+    </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
