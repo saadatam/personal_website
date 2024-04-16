@@ -91,3 +91,18 @@ function updateDisplay() {
 function padNumber(num) {
   return num.toString().padStart(2, '0'); // Add leading zero if number is < 10
 }
+
+// Calculator functionality 
+function appendToDisplay(value) {
+  document.getElementById('result').value += value;
+}
+
+function clearDisplay() {
+  document.getElementById('result').value = '';
+}
+
+function calculate() {
+  const expression = document.getElementById('result').value;
+  const result = eval(expression); // Using eval() for simplicity, but consider safer alternatives in production
+  document.getElementById('result').value = result;
+}
