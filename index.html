@@ -32,18 +32,6 @@
             <p>Hi! I'm Ammaar. I'm currently a junior studying computer science and engineering at the University of Michigan.</p>
         </div>
         
-        <div id="portfolio">
-            <div class="container">
-                <h2>Portfolio</h2>
-            </div>
-            <p>I love to create projects.</p>
-            <a href="portfolio.html">projects</a>
-        </div>
-        <div id="hobbies">
-            <div class="container">
-                <h2>Hobbies</h2>
-            </div>
-        </div>
         <div id="tools">
             <div class="container">
                 <h2>Tools</h2>
@@ -51,6 +39,12 @@
             <div class="container">
                 <h3 id="tool">Stop Watch</h3>
             </div>
+
+            <div id="stickyNotes" class="sticky-notes">
+                <button id="createNoteBtn" onclick="createNote()">Create Note</button>
+              </div>
+
+
             <div id="stopwatch">
                 <div id="sw_display">00:00:00</div>
                 <button id="startStopBtn" onclick="startStop()">Start</button>
@@ -63,12 +57,12 @@
                 <label for="taskInput">Add new task:</label>
                 <input type="text" id="taskInput" placeholder="Enter ...">
                 <button type="button" onclick="addTask()">Add</button>
+                <button onclick="clearTasks()">Clear All</button>
             </form>
             <ul id="taskList"> <div id="taskListTitle">My Tasks:</div></ul>
-
-            <h3> Calculator</h3>
-            <div class="container">
-                
+            
+            <h3 id="tool"> Calculator</h3>
+            <div style="align-content: center;">
                 <div id="calculator">
                   <input type="text" id="result" disabled>
                   <div id="buttons" style="align-content: center;">
@@ -99,6 +93,20 @@
             </div>
             <div id="clock"></div>
         </div>  
+
+        <div id="portfolio">
+            <div class="container">
+                <h2>Portfolio</h2>
+            </div>
+            <p>I love to create projects.</p>
+            <a href="portfolio.html">projects</a>
+        </div>
+        <div id="hobbies">
+            <div class="container">
+                <h2>Hobbies</h2>
+            </div>
+        </div>
+
         <div id="contact">
             <div class="container">
                 <h2>Contact Me</h2>
@@ -107,6 +115,7 @@
                 <p>Feel free to reach out to me at <a href="mailto:saadatam@umich.edu">saadatam@umich.edu</a>.</p>
             </div>
         </div>    
+        
     </main>
     <footer>
         <div class="container">

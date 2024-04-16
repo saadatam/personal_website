@@ -21,9 +21,12 @@ body {
     color: bisque;
 }
 .dark-mode #clock {
-    color:bisque
+    color:bisque;
 }
 
+.dark-mode .note {
+    color:#333333;
+}
 /*
 #toggleModeBtn {
     position: absolute;
@@ -72,11 +75,17 @@ nav ul li:last-child {
 }
 
 #clock {
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
     position: relative;
     font-weight: bold;
     font-size: 30px;
     color: #333333;
+    font-size: 72px;
+    padding: 20px;
+    border: 2px solid rgb(97, 97, 97);
+    border-radius: 15pc;
+    box-shadow: 0 0 20px rgba(198, 149, 2, 0.5);
 }
 ul {
     padding: 0;
@@ -104,9 +113,14 @@ h1, p {
 #taskList {
     align-content: center;
     text-align: center;
+    padding: 20px;
+    border: 2px solid rgb(97, 97, 97);
+    border-radius: 15pc;
+    box-shadow: 0 0 20px rgba(198, 149, 2, 0.5);
 }
 #taskListTitle {
     text-decoration: underline;
+    
 }
 
 #stopwatch{
@@ -121,19 +135,42 @@ h1, p {
     margin-top: 20px auto;
   }
   
-  #result {
+#result {
     width: 100%;
     margin-bottom: 10px;
     font-size: 24px;
-  }
+}
   
-  #buttons {
+#buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 5px;
-  }
+}
   
-  #buttons button {
+#buttons button {
     padding: 10px;
     font-size: 18px;
+}
+
+
+.sticky-notes {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+  
+.note {
+    position: relative; 
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px 10px 10px 10px; /* Adjust padding as needed */
+    margin-bottom: 10px;
+    max-width: 300px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.delete-button {
+    position: absolute;
+    padding: 5px;
+    cursor: pointer;
   }

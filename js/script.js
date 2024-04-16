@@ -50,6 +50,15 @@ document.getElementById('taskInput').addEventListener('keypress', function(event
     }
 });
 
+function clearTasks() {
+  event.preventDefault(); 
+
+  const taskList = document.getElementById('taskList');
+  const tasks = taskList.querySelectorAll('li'); // Select all <li> elements inside the task list
+  tasks.forEach(task => {
+    task.remove(); // Remove each <li> element
+  });
+}
 // Stop Watch Functionality
 let timer; 
 let startTime;
@@ -85,11 +94,11 @@ function updateDisplay() {
   // Format the time as MM:SS:MS
   const formattedTime = `${padNumber(minutes)}:${padNumber(seconds)}:${padNumber(milliseconds)}`;
 
-  document.getElementById('sw_display').textContent = formattedTime; // Update display
+  document.getElementById('sw_display').textContent = formattedTime; // update display
 }
 
 function padNumber(num) {
-  return num.toString().padStart(2, '0'); // Add leading zero if number is < 10
+  return num.toString().padStart(2, '0'); // leading zero padding
 }
 
 // Calculator functionality 
@@ -103,6 +112,21 @@ function clearDisplay() {
 
 function calculate() {
   const expression = document.getElementById('result').value;
-  const result = eval(expression); // Using eval() for simplicity, but consider safer alternatives in production
+  const result = eval(expression); // Using eval() for simplicity
   document.getElementById('result').value = result;
+}
+
+
+// sticky note functionality
+let noteIndex = 1;
+
+function createNote() {
+  const stickyNotes = document.getElementById('stickyNotes');
+  const note = document.createElement('div');
+  note.className = 'note';
+  note.contentEditable = true;
+  note.textContent = 'Note ' + noteIndex;
+
+  stickyNotes.appendChild(note);
+  noteIndex++;
 }
