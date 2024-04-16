@@ -2,7 +2,7 @@
 body {
     background-image: url(/images/light_mode_background.webp);
     background-repeat:repeat-y;
-    background-size: cover; /* Scale the background image to cover the entire navbar */
+    background-size: cover; 
     background-position: center;
 
     color: #333333;
@@ -45,7 +45,7 @@ body {
 .container {
     display: flex;
     align-items: center;
-    max-width: 1200px; /* Adjust max-width as needed */
+    max-width: 1200px;
 }
 #navbar{
     display: flex;
@@ -54,13 +54,13 @@ body {
 }
 
 nav ul {
-    display: flex; /* Change the display property to flex */
+    display: flex;
     list-style-type: none;
     padding: 0;
 }
   
 nav ul li {
-    margin-right: 20px; /* Add margin between navbar items */
+    margin-right: 20px;
     font-size: 20px;
 }
 nav ul li:hover {
@@ -68,7 +68,7 @@ nav ul li:hover {
 }
   
 nav ul li:last-child {
-    margin-right: 0; /* Remove margin from the last navbar item */
+    margin-right: 0;
 }
 
 #clock {
@@ -85,7 +85,7 @@ ul {
 }
 
 li {
-
+    text-decoration: none;
     align-content: center;
     text-align: center;
     margin-top: 5px;
@@ -98,12 +98,17 @@ h2 {
     text-decoration: underline;
 }
 h1, p {
-    display: block; /* Ensure both h1 and p are block-level elements */
+    display: block;
 }
 
 #taskList {
+    align-content: center;
     text-align: center;
 }
+#taskListTitle {
+    text-decoration: underline;
+}
+
 #stopwatch{
     text-align: center;
 }

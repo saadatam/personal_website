@@ -1,3 +1,4 @@
+
 // dark mode button event listener
 const toggleModeBtn = document.getElementById('toggleModeBtn');
 const body = document.body;
@@ -5,7 +6,6 @@ const body = document.body;
 toggleModeBtn.addEventListener('click', () => {
   body.classList.toggle('dark-mode');
 });
-
 
 // clock function
 function updateClock() {
@@ -24,7 +24,6 @@ function updateClock() {
 setInterval(updateClock, 1000);
 // Initial call to display the clock immediately
 updateClock();
-
 
 
 //To-Do list function
@@ -52,9 +51,9 @@ document.getElementById('taskInput').addEventListener('keypress', function(event
 });
 
 // Stop Watch Functionality
-let timer; // Variable to store the interval timer
-let startTime; // Variable to store the start time of the stopwatch
-let running = false; // Flag to indicate if the stopwatch is running
+let timer; 
+let startTime;
+let running = false; 
 
 function startStop() {
   if (running) {
