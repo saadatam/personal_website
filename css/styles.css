@@ -1,6 +1,6 @@
 /* Light mode styles */
 body {
-    background-image: url(images/light_mode_background.webp);
+    background-image: url(../images/light_mode_background.webp);
     background-repeat:repeat-y;
     background-size: cover; 
     background-position: center;
@@ -13,7 +13,7 @@ body {
   
   /* Dark mode styles */
 .dark-mode {
-    background-image: url(images/background_image.webp);
+    background-image: url(../images/background_image.webp);
     background-color: #333333;
     color: #ffffff;
 }
