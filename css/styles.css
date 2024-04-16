@@ -133,7 +133,7 @@ h1, p {
     gap: 5px;
   }
   
-  button {
+  #buttons button {
     padding: 10px;
     font-size: 18px;
   }
