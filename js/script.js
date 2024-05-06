@@ -112,7 +112,7 @@ function clearDisplay() {
 
 function calculate() {
   const expression = document.getElementById('result').value;
-  const result = eval(expression); // Using eval() for simplicity
+  const result = eval(expression);
   document.getElementById('result').value = result;
 }
 
